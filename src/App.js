@@ -40,19 +40,19 @@ const App = () => {
     //validating the data inputs
     let errorList = []
     if (newData.name === "") {
-      errorList.push("Try Again, You didn't enter the name field")
+      errorList.push("Enter name")
     }
     if (newData.username === "") {
-      errorList.push("Try Again, You didn't enter the Username field")
+      errorList.push("Enter username")
     }
     if (newData.email === "") {
-      errorList.push("Oops!!! Please enter a valid email")
+      errorList.push("Email is invalid")
     }
     if (newData.phone === "") {
-      errorList.push("Try Again, Phone number field can't be blank")
+      errorList.push("phone number blank")
     }
     if (newData.website === "") {
-      errorList.push("Try Again, Enter website url before submitting")
+      errorList.push("website not entered")
     }
 
     if (errorList.length < 1) {
@@ -104,19 +104,19 @@ const App = () => {
     //validating the data inputs
     let errorList = []
     if (newData.name === "") {
-      errorList.push("Try Again, You didn't enter the name field")
+      errorList.push("Enter name")
     }
     if (newData.username === "") {
-      errorList.push("Try Again, You didn't enter the Username field")
+      errorList.push("Enter username")
     }
     if (newData.email === "") {
-      errorList.push("Oops!!! Please enter a valid email")
+      errorList.push("Email is invalid")
     }
     if (newData.phone === "") {
-      errorList.push("Try Again, Phone number field can't be blank")
+      errorList.push("phone number blank")
     }
     if (newData.website === "") {
-      errorList.push("Try Again, Enter website url before submitting")
+      errorList.push("website not entered")
     }
 
     if (errorList.length < 1) {
@@ -130,7 +130,7 @@ const App = () => {
           setIserror(false)
         })
         .catch(error => {
-          setErrorMessages(["Cannot add data. Server error!"])
+          setErrorMessages(["Error! Can't add data"])
           setIserror(true)
           resolve()
         })
@@ -144,7 +144,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Material Table Example Using JSONPlaceholder API</h1> <br /><br />
+      <h1>Nemesis assignment</h1> <br /><br />
 
       <MaterialTable
         title="User Details"
